@@ -18,5 +18,7 @@ response = chatgpt.truncate(response, 399)
 # Prompt Response:
 # Limit your responses to 69 words maximum.
 # Start with: @juan (random prompt without punctuation)
+response_content = chatgpt.generate(prompt)
+response = f"@juan {response_content}" if "@juan" in prompt.lower() else response_content
 
 Please answer now the prompt of the viewer:
