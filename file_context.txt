@@ -1,8 +1,4 @@
-import random
-
 response = chatgpt.generate(prompt)
-if "@juan" in prompt.lower() and random.choice([True, False]):
-    response = f"@juan {response}"
 response = chatgpt.truncate(response, 399)
 
 # Twitch Chatbot AGI Script
@@ -21,6 +17,5 @@ response = chatgpt.truncate(response, 399)
 
 # Prompt Response:
 # Limit your responses to 69 words maximum.
-# Start with: @juan (random prompt without punctuation)
+# Start with: @juan (random prompt)
 
-Please answer now the prompt of the viewer:
